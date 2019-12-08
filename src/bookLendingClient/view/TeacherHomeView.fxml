@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="BackGround" stylesheets="@../../../bin/bookLendingClient/view/CSS/HomeViewCss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookLendingClient.controller.TeacherHomeController">
+   <children>
+      <Pane prefHeight="50.0" prefWidth="1000.0" style="-fx-opacity: 1.0;">
+         <children>
+            <Label fx:id="welcomeMsg" alignment="CENTER" layoutX="700.0" prefHeight="50.0" prefWidth="150.0" text="欢迎，朱炳坤">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" layoutX="850.0" mnemonicParsing="false" onAction="#onClickLogout" opacity="0.77" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #fff; -fx-opacity: 0.55;" text="退出登录">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <VBox layoutY="50.0" opacity="0.86" prefHeight="550.0" prefWidth="200.0" style="-fx-background-color: #fff; -fx-opacity: 0.8;">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #fff;" text="首    页">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onClickBooks" prefHeight="50.0" prefWidth="200.0" styleClass="Button" text="管 理 全 部 图 书">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onClickSearchView" prefHeight="50.0" prefWidth="200.0" styleClass="Button" text="查 找 图 书">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onClickPerson" prefHeight="50.0" prefWidth="200.0" styleClass="Button" text="个 人 中 心">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="200.0" layoutY="50.0" prefHeight="550.0" prefWidth="800.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookLendingClient.controller.RegisterController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="250.0" styleClass="RegisterBackGround" stylesheets="@../../../bin/bookLendingClient/view/CSS/LoginViewCss.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ComboBox fx:id="choiceType" layoutX="85.0" layoutY="80.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="userName" layoutX="85.0" layoutY="115.0" prefHeight="25.0" prefWidth="150.0" />
+            <PasswordField fx:id="password" layoutX="85.0" layoutY="150.0" prefHeight="25.0" prefWidth="150.0" />
+            <PasswordField fx:id="rePassword" layoutX="85.0" layoutY="185.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="realName" layoutX="85.0" layoutY="220.0" prefHeight="25.0" prefWidth="150.0" />
+            <TextField fx:id="phoneNumber" layoutX="85.0" layoutY="255.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label fx:id="errorMsg" alignment="CENTER" layoutY="290.0" prefHeight="25.0" prefWidth="250.0" textAlignment="CENTER" textFill="#fc0000">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="register" layoutX="85.0" layoutY="325.0" mnemonicParsing="false" onAction="#onClickRegister" prefHeight="35.0" prefWidth="80.0" text="注  册">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="15.0" layoutY="80.0" prefHeight="25.0" prefWidth="70.0" text="您      是：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="115.0" prefHeight="25.0" prefWidth="70.0" text="用 户 名：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="150.0" prefHeight="25.0" prefWidth="70.0" text="密      码：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="185.0" prefHeight="25.0" prefWidth="70.0" text="确认密码：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="220.0" prefHeight="25.0" prefWidth="70.0" text="真实姓名：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="255.0" prefHeight="25.0" prefWidth="70.0" text="手机号码：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

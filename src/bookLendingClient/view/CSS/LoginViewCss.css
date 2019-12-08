@@ -1,0 +1,6 @@
+.BackGround{
+	-fx-background-image: url("./Images/LoginBackGround.jpg");
+}
+.RegisterBackGround{
+	-fx-background-image: url("./Images/RegisterBackGround.jpg");
+}

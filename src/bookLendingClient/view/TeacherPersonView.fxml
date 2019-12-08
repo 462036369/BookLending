@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="BackGround" stylesheets="@../../../bin/bookLendingClient/view/CSS/HomeViewCss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookLendingClient.controller.TeacherPersonController">
+   <children>
+      <Pane prefHeight="50.0" prefWidth="1000.0" style="-fx-opacity: 1.0;">
+         <children>
+            <Label fx:id="welcomeMsg" alignment="CENTER" layoutX="700.0" prefHeight="50.0" prefWidth="150.0" text="欢迎，朱炳坤">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" layoutX="850.0" mnemonicParsing="false" onAction="#onClickLogout" opacity="0.77" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #fff; -fx-opacity: 0.55;" text="退出登录">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <VBox layoutY="50.0" opacity="0.86" prefHeight="550.0" prefWidth="200.0" style="-fx-background-color: #fff; -fx-opacity: 0.8;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onClickHome" prefHeight="50.0" prefWidth="200.0" styleClass="Button" text="首    页">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onClickBooks" prefHeight="50.0" prefWidth="200.0" styleClass="Button" text="管 理 全 部 图 书">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onClickSearchView" prefHeight="50.0" prefWidth="200.0" styleClass="Button" text="查 找 图 书">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #fff;" text="个 人 中 心">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="200.0" layoutY="50.0" prefHeight="550.0" prefWidth="800.0">
+         <children>
+            <Pane layoutX="200.0" layoutY="50.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #fff; -fx-opacity: 0.8; -fx-border-radius: 100; -fx-background-radius: 100;">
+               <children>
+                  <Label alignment="CENTER" layoutX="75.0" layoutY="75.0" prefHeight="25.0" prefWidth="100.0" text="用户名：">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userName" alignment="CENTER" layoutX="175.0" layoutY="75.0" prefHeight="25.0" prefWidth="150.0" text="admin">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="75.0" layoutY="125.0" prefHeight="25.0" prefWidth="100.0" text="修改密码：">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="75.0" layoutY="175.0" prefHeight="25.0" prefWidth="100.0" text="真实姓名：">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="75.0" layoutY="225.0" prefHeight="25.0" prefWidth="100.0" text="手机号码：">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="changeRealName" layoutX="175.0" layoutY="175.0" prefHeight="25.0" prefWidth="150.0" />
+                  <TextField fx:id="changePhoneNum" layoutX="175.0" layoutY="225.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Button alignment="CENTER" layoutX="150.0" layoutY="275.0" mnemonicParsing="false" onAction="#onClickSure" prefHeight="50.0" prefWidth="100.0" text="确 定 修 改">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="errorMsg" alignment="CENTER" layoutX="100.0" layoutY="340.0" prefHeight="25.0" prefWidth="200.0" textFill="#eb1919">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="changePassword" layoutX="175.0" layoutY="125.0" prefHeight="25.0" prefWidth="150.0" />
+               </children>
+            </Pane>
+         </children></Pane>
+   </children>
+</AnchorPane>

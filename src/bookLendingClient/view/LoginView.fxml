@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" stylesheets="@CSS/LoginViewCss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookLendingClient.controller.LoginController">
+   <children>
+      <Pane layoutX="24.0" layoutY="14.0" prefHeight="400.0" prefWidth="400.0" styleClass="BackGround" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="userName" layoutX="160.0" layoutY="185.0" prefHeight="25.0" prefWidth="160.0" />
+            <PasswordField fx:id="password" layoutX="160.0" layoutY="230.0" prefHeight="25.0" prefWidth="160.0" />
+            <Label layoutX="80.0" layoutY="185.0" maxHeight="25.0" prefHeight="25.0" prefWidth="80.0" text="用户名：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="230.0" maxHeight="25.0" prefHeight="25.0" prefWidth="80.0" text="密    码：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="80.0" layoutY="285.0" mnemonicParsing="false" onAction="#onClickLogin" prefHeight="30.0" prefWidth="80.0" text="登  陆" />
+            <Button fx:id="register" layoutX="240.0" layoutY="285.0" mnemonicParsing="false" onAction="#onClickRegister" prefHeight="30.0" prefWidth="80.0" text="注  册" />
+            <Label fx:id="errorMsg" alignment="CENTER" layoutX="100.0" layoutY="344.0" prefHeight="25.0" prefWidth="200.0" textFill="#f50e0e">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

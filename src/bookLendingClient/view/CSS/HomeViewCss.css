@@ -1,0 +1,10 @@
+.BackGround{
+		-fx-background-image: url("./Images/Home.jpg");
+}
+.Button{
+	-fx-background-color: #ccc;
+}
+.Button:hover{
+	-fx-background-color: #ddd;
+	-fx-border-color: #aaa #aaa #aaa  #aaa;
+}
